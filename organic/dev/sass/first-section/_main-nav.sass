@@ -1,0 +1,53 @@
+.main-nav
+	font-size: 15px
+	font-weight: bold
+
+	&__nav-link
+		height: 20px
+		display: inline-block
+		margin-right: 50px
+		text-shadow: 0px 0px .1px black
+		& a
+			color: white
+			text-decoration: none
+		& a:hover
+			text-decoration: underline
+
+	&__nav-link:hover .main-nav__dropdown-content
+		top: 20px
+		visibility: visible
+		opacity: 1
+
+
+.main-nav //dropdowns
+	
+	&__dropdown
+		position: relative
+		display: inline-block
+		padding-right: 20px
+
+	&__dropdown-content
+		top: 15px
+		min-width: 120px
+		visibility: hidden
+		opacity: 0
+		position: absolute
+		background-color: #f1f1f1
+		text-shadow: none
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+		transition: linear .2s
+
+	&__dropdown-content a:hover
+		background-color: #ddd
+
+	&__dropdown-content a
+		color: rgba(black, 0.8)
+		padding: 12px 16px
+		text-decoration: none
+		display: block
+	
+	&__dropdown-shape
+		display: inline-block
+		position: absolute
+		right: 6px
+		top: -2px
