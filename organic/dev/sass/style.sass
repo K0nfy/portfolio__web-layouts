@@ -4,6 +4,17 @@ body
 	font-family: 'Source Sans Pro', sans-serif
 	font-weight: 700
 
-@import 'first-section/_first-section'
-@import 'second-section/_second-section'
-@import 'footer/_footer'
+@import 'desktop/first-section/_first-section'
+@import 'desktop/second-section/_second-section'
+@import 'desktop/footer/_footer'
+
+@media screen and (max-width: 1220px)
+	@import 'tablet/first-section/_first-section'
+	@import 'tablet/second-section/_second-section'
+	@import 'tablet/footer/_footer'
+
+// @media screen and (max-width: 767px)
+	// @import 'mobile/first-section/_first-section'
+	// @import 'mobile/second-section/_second-section'
+	// @import 'mobile/footer/_footer'
+

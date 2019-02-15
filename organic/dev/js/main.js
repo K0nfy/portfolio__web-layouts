@@ -1,21 +1,21 @@
-// sliders options
+$(document).ready(function(){
+  $('.first-slider').slick({
+    prevArrow: '<div class="slider__arrow slider__arrow--prev"><</div>',
+    nextArrow: '<div class="slider__arrow slider__arrow--next">></div>',
+    asNavFor: $('.second-slider'),
+    fade: true,
+    infinite: false
+  });
 
-var firstSwiper = new Swiper ('.first-slider', {
-  loop: false,
-  spaceBetween: 300,
-  followFinger: false,
-  navigation: {
-    nextEl: '.slider__arrow--next',
-    prevEl: '.slider__arrow--prev',
-    disabledClass: 'slider__arrow--disabled'
-  }
 });
-var secondSwiper = new Swiper ('.second-slider', {
-  loop: false,
-  spaceBetween: 300
+$(document).ready(function(){
+  $('.second-slider').slick({
+    arrows: false,
+    asNavFor: $('.first-slider'),
+    fade: true,
+    infinite: false
+  });
 });
-firstSwiper.controller.control = secondSwiper;
-secondSwiper.controller.control = firstSwiper;
 
 
 // links preventDefault

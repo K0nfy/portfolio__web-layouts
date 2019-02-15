@@ -1,0 +1,77 @@
+.first-slider, .second-slider
+	display: inline-block
+
+
+.first-slider
+    width: 275px
+    height: 320px
+    position: relative
+    vertical-align: -117px
+    & .slick-slide
+    	padding: 24.5px 0 24.5px 2px
+    	font-size: 20px
+    	font-style: italic
+    	color: #fe992a
+    	line-height: 28px
+    & .slider-text
+    	// float: left
+    	display: inline
+
+
+    & .open-quotes-container, .closing-quotes-container
+    	// width: 10px
+    	// height: 10px
+    	display: inline
+    	position: relative
+    & .open-quotes-container
+
+    & .quotes
+    	// display: inline
+    	position: absolute
+    	font-size: 45px
+
+    & .open-quotes
+    	top: -22px
+    	left: -5px
+    & .closing-quotes
+    	top: 7px
+    	right: -25px
+    	
+
+.slider__arrow
+	font-family: Lato
+	font-size: 20px
+	line-height: 29px
+	// padding-top: 4px
+	color: white
+	display: inline-block
+	position: absolute
+	width: 30px
+	height: 30px
+	background-color: #fe992a
+	right: 0
+	bottom: 0
+	text-align: center
+	vertical-align: 1px
+	cursor: pointer
+	&--prev
+		right: 30.5px
+.slick-disabled
+	background-color: #ffba6e
+
+
+
+.second-slider
+	width: 590px
+	margin-left: 18px
+	vertical-align: -132px
+	// height: 300px
+	& .slide-header
+		margin-bottom: 20px
+		font-size: 24px
+		color: #fe992a
+		// margin-bottom: 20px
+	& .slider-text
+		font-size: 14px
+		line-height: 30px
+		color: #737c85
