@@ -1,3 +1,4 @@
+// sliders initialize
 $(document).ready(function(){
   $('.first-slider').slick({
     prevArrow: '<div class="slider__arrow slider__arrow--prev"><</div>',
@@ -26,4 +27,18 @@ addEventListener("load", function() {
       e.preventDefault();
     });
   }
+});
+
+
+// menu button
+$('.menu-button--open')
+  .parents('.menu-button-container--green')
+  .bind('click', function() {
+    $('.main-nav').css('marginRight', '0');
+    // $('body').css('overflow', 'hidden');
+});
+
+$('.menu-button--close').bind('click', function() {
+  $('.main-nav').css('marginRight', '');
+  // $('body').css('overflow', '');
 });
