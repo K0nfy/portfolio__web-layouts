@@ -1,0 +1,53 @@
+.person-cells
+	margin-top: 70px
+	display: flex
+	align-items: center
+	position: relative
+	// border: 1px solid pink
+	&__cell
+		width: 336px
+		height: 336px
+		position: relative
+		margin-top: -10px
+		background-image: linear-gradient(to bottom, #747474 0%, #8e8e8e 100%)
+		border-radius: 50%
+		// border: 1px solid red
+		border: 1px solid grey
+		z-index: 11
+		background-repeat: no-repeat
+		&:after
+			border-radius: 50%
+			content: ''
+			width: 195px
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+			box-shadow: 0px 15px 40px 3px black
+			z-index: -1
+		&--main
+			margin: 0 -117px
+			width: 381px
+			height: 381px
+			z-index: 12
+	&__background-cell
+		// display: none
+		width: 472px
+		height: 500px
+		position: absolute
+		top: -57px
+		left: -298px
+		border-radius: 50%
+		transform: translateX(100%)
+		background-image: linear-gradient(to bottom, rgba(255,255,255,.4) 25%,rgba(255,255,255,1) 40%,rgba(255,255,255,0) 70%)
+
+.person-cells
+	&--first-person
+		background-position: 53% 6%
+		background-image: url(../img/first-section/person/James-Adam.jpg)
+	&--second-person
+		background-position: 104% 138%
+		background-image: url(../img/first-section/person/Natali-Grand.png), linear-gradient(to bottom, #747474 0%, #8e8e8e 100%)
+	&--third-person
+		background-position: 1% 0%
+		background-image: url(../img/first-section/person/Judy-Miles.jpg)
