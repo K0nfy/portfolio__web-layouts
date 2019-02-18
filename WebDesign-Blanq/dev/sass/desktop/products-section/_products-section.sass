@@ -1,0 +1,40 @@
+.products-section
+	position: relative
+	&__row
+		display: flex
+		justify-content: space-between
+		padding: 73px 47px 53px 47px
+	&__product-card
+		width: 215px
+		display: flex
+		flex-direction: column
+	&__product-avatar
+		display: inline-block
+		width: 169px
+		height: 169px
+		margin: 0 23px 45px 23px
+		position: relative
+		border-radius: 50%
+		background-repeat: no-repeat
+		background-image: url(../img/common/rose.png)
+		background-position: -1px 11px
+		background-color: #fff
+		&:before // bg white circle border
+			content: ''
+			position: absolute
+			top: -23px
+			left: -23px
+			width: 214px
+			height: 214px
+			opacity: .3
+			border-radius: 50%
+			background-color: white
+			z-index: -1
+	&__product-name
+		margin-bottom: 8px
+		font-size: 22px
+		font-style: italic
+		line-height: 20px
+	&__product-description
+		font-size: 14px
+		line-height: 24px

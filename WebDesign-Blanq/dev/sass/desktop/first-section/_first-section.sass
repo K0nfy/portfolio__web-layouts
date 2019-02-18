@@ -1,17 +1,40 @@
 .first-section
-	height: 1000px
 	display: flex
 	flex-direction: column
 	align-items: center
-	padding: 76px 0 25px 0
+	padding: 70px 0 43px 0
+
+.first-section
 	&__header
-		width: 245px
-		background-image: url(../img/first-section/logo/logo.png)
-		background-repeat: no-repeat
-		background-size: contain
+		margin-bottom: 115px
 		& > h1
-			opacity: 0
-			visibility: hidden
+			margin: 0 0 0 28px
+			font-weight: 400
+			font-size: 2.2em
+			letter-spacing: 31px
+
+.first-section
+	&__sign
+		margin: 132px 0 0 0
+		position: relative
+		& > h2
+			font-family: serif
+			margin: 0
+			text-align: center
+			font-weight: 400
+			font-size: 11.5px
+			letter-spacing: 4.5px
+			margin-right: -4.5px // removing 'letter-spacing' for the last letter
+		&:after
+			content: ''
+			width: 102%
+			height: 2px
+			position: absolute
+			top: -12px
+			left: -1%
+			background-color: white
+
+
 
 
 @import "_person-cells.sass"

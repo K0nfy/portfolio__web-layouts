@@ -1,35 +1,58 @@
 html {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%), url(../img/main-bg.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 30%), url(../img/main-bg.jpg);
 }
 
 body {
-  width: 960px;
   margin: auto;
   color: white;
+  font-family: 'Tinos', serif;
+  width: 1060px;
 }
 
 .first-section {
-  height: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 76px 0 25px 0;
+  padding: 70px 0 43px 0;
 }
 
 .first-section__header {
-  width: 245px;
-  background-image: url(../img/first-section/logo/logo.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+  margin-bottom: 115px;
 }
 
 .first-section__header > h1 {
-  opacity: 0;
-  visibility: hidden;
+  margin: 0 0 0 28px;
+  font-weight: 400;
+  font-size: 2.2em;
+  letter-spacing: 31px;
+}
+
+.first-section__sign {
+  margin: 132px 0 0 0;
+  position: relative;
+}
+
+.first-section__sign > h2 {
+  font-family: serif;
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 11.5px;
+  letter-spacing: 4.5px;
+  margin-right: -4.5px;
+}
+
+.first-section__sign:after {
+  content: '';
+  width: 102%;
+  height: 2px;
+  position: absolute;
+  top: -12px;
+  left: -1%;
+  background-color: white;
 }
 
 .person-cells {
-  margin-top: 70px;
   display: flex;
   align-items: center;
   position: relative;
@@ -47,8 +70,19 @@ body {
   background-repeat: no-repeat;
 }
 
-.person-cells__cell:after {
+.person-cells__cell:before {
+  content: '';
+  position: absolute;
+  top: -35px;
+  left: -35px;
+  width: 406px;
+  height: 406px;
+  opacity: .1;
   border-radius: 50%;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.person-cells__cell:after {
   content: '';
   width: 195px;
   position: absolute;
@@ -67,6 +101,10 @@ body {
   z-index: 12;
 }
 
+.person-cells__cell--main:before {
+  display: none;
+}
+
 .person-cells__background-cell {
   width: 472px;
   height: 500px;
@@ -76,7 +114,7 @@ body {
   border-radius: 50%;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 25%, white 40%, rgba(255, 255, 255, 0) 70%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 25%, rgba(255, 255, 255, 0) 95%);
 }
 
 .person-cells--first-person {
@@ -94,6 +132,148 @@ body {
   background-image: url(../img/first-section/person/Judy-Miles.jpg);
 }
 
+.text-section__row {
+  padding: 75px 50px 70px 50px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-section__avatar {
+  display: inline-block;
+  width: 169px;
+  height: 169px;
+  margin: 0 23px;
+  position: relative;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+}
+
+.text-section__avatar--rose {
+  background-image: url(../img/common/rose.png);
+  background-position: -1px 11px;
+  background-color: #fff;
+}
+
+.text-section__avatar--lina {
+  background-image: url(../img/common/lina.png);
+  background-position: -8px -1px;
+}
+
+.text-section__avatar:before {
+  content: '';
+  position: absolute;
+  top: -23px;
+  left: -23px;
+  width: 214px;
+  height: 214px;
+  opacity: .2;
+  border-radius: 50%;
+  background-color: white;
+  z-index: -1;
+}
+
+.text-section__text {
+  width: 75%;
+  display: inline-block;
+}
+
+.text-section__text h3 {
+  display: inline-block;
+  margin: 0;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.text-section__text p {
+  display: inline-block;
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.products-section {
+  position: relative;
+}
+
+.products-section__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 73px 47px 53px 47px;
+}
+
+.products-section__product-card {
+  width: 215px;
+  display: flex;
+  flex-direction: column;
+}
+
+.products-section__product-avatar {
+  display: inline-block;
+  width: 169px;
+  height: 169px;
+  margin: 0 23px 45px 23px;
+  position: relative;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-image: url(../img/common/rose.png);
+  background-position: -1px 11px;
+  background-color: #fff;
+}
+
+.products-section__product-avatar:before {
+  content: '';
+  position: absolute;
+  top: -23px;
+  left: -23px;
+  width: 214px;
+  height: 214px;
+  opacity: .3;
+  border-radius: 50%;
+  background-color: white;
+  z-index: -1;
+}
+
+.products-section__product-name {
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-style: italic;
+  line-height: 20px;
+}
+
+.products-section__product-description {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.footer {
+  margin-top: 3px;
+  margin-bottom: 50px;
+  padding: 77px 0 108px 0;
+  text-align: center;
+  background-color: rgba(100, 100, 100, 0.6);
+}
+
+.footer__header {
+  position: relative;
+  display: inline;
+  font-size: 36px;
+  letter-spacing: 31px;
+  margin-right: -31px;
+}
+
+.footer__header:after {
+  content: '';
+  width: 58%;
+  height: 2px;
+  position: absolute;
+  bottom: -25px;
+  left: 15.6%;
+  background-color: white;
+}
+
 .first-section {
   position: relative;
 }
@@ -104,6 +284,49 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 50%);
+  z-index: -1;
+}
+
+.first-section:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(200, 200, 200, 0.3) 0%, rgba(255, 255, 255, 0) 50%);
+  z-index: -1;
+}
+
+.text-section__row--first:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(200, 200, 200, 0.3) 0%, rgba(200, 200, 200, 0.1) 100%);
+  z-index: -1;
+}
+
+.text-section__row--second:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(100, 100, 100, 0.4) 0%, rgba(100, 100, 100, 0.1) 100%);
+  z-index: -1;
+}
+
+.products-section:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(100, 100, 100, 0.6) 0%, rgba(130, 130, 130, 0.1) 100%);
   z-index: -1;
 }

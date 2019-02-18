@@ -1,0 +1,47 @@
+.text-section
+	&__row
+		padding: 75px 50px 70px 50px
+		display: flex
+		position: relative
+		align-items: center
+		justify-content: space-between
+	&__avatar
+		display: inline-block
+		width: 169px
+		height: 169px
+		margin: 0 23px
+		position: relative
+		border-radius: 50%
+		background-repeat: no-repeat
+		&--rose
+			background-image: url(../img/common/rose.png)
+			background-position: -1px 11px
+			background-color: #fff
+		&--lina
+			background-image: url(../img/common/lina.png)
+			background-position: -8px -1px
+		&:before // bg white circle border
+			content: ''
+			position: absolute
+			top: -23px
+			left: -23px
+			width: 214px
+			height: 214px
+			opacity: .2
+			border-radius: 50%
+			background-color: white
+			z-index: -1
+	&__text
+		width: 75%
+		display: inline-block
+		& h3
+			display: inline-block
+			margin: 0
+			font-size: 22px
+			font-style: italic
+			font-weight: 400
+		& p
+			display: inline-block
+			margin: 10px 0 0 0
+			font-size: 14px
+			line-height: 26px
