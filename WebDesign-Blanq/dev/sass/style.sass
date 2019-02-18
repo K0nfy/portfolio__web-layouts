@@ -1,6 +1,5 @@
 html
 	background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 30%), url(../img/main-bg.jpg)
-	// overflow-x: hidden // perfect pixel debug
 body
 	margin: auto
 	color: white
@@ -13,4 +12,12 @@ body
 @import "desktop/products-section/_products-section.sass"
 @import "desktop/footer/_footer.sass"
 @import "desktop/_background-gradients.sass"
+
+@media screen and (max-width: 1059px)
+	body
+		width: 768px
+
+	@import "tablet/first-section/_first-section.sass"
+	@import "tablet/products-section/_products-section.sass"
+	@import "tablet/text-section/_text-section.sass"
 
