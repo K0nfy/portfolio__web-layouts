@@ -7,30 +7,30 @@
 		justify-content: space-between
 	&__avatar
 		display: inline-block
-		width: 169px
-		height: 169px
-		margin: 0 23px
+		width: 214px
+		height: 214px
 		position: relative
 		border-radius: 50%
-		background-repeat: no-repeat
+		background-color: rgba(white, 0.2)
 		&--rose
-			background-image: url(../img/common/rose.png)
-			background-position: -1px 11px
-			background-color: #fff
+			&:after
+				background-image: url(../img/common/rose.png)
+				background-position: -1px 11px
+				background-color: #fff
 		&--lina
-			background-image: url(../img/common/lina.png)
-			background-position: -8px -1px
-		&:before // bg white circle border
+			&:after
+				background-image: url(../img/common/lina.png)
+				background-position: -8px -1px
+		&:after
 			content: ''
+			width: 169px
+			height: 169px
 			position: absolute
-			top: -23px
-			left: -23px
-			width: 214px
-			height: 214px
-			opacity: .2
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
 			border-radius: 50%
-			background-color: white
-			z-index: -1
+			background-repeat: no-repeat
 	&__text
 		width: 75%
 		display: inline-block

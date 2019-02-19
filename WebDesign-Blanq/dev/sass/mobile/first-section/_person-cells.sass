@@ -1,0 +1,38 @@
+.person-cells
+	flex-direction: column
+	&__cell
+		width: 200px
+		height: 200px
+		position: static
+		background-size: cover
+		background-position: 0 0
+		&:after // cells bottom shadow
+			width: 134px
+			box-shadow: 0px 15px 40px 3px black
+		&--first
+			z-index: 13
+		&--middle
+			width: 245px
+			height: 245px
+			margin: -6px 0
+			transform: none
+		&--last
+
+
+.person-cells
+	&__background-cells // container
+		height: auto
+		top: -43px
+		display: flex
+		flex-direction: column
+		position: absolute
+	&__background-cell
+		width: 285px
+		height: 285px
+		margin: auto
+		position: static
+		&--middle
+			margin-top: -64px
+			transform: none
+		&--last
+			margin-top: -70px

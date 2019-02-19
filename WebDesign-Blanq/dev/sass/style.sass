@@ -4,6 +4,7 @@ body
 	margin: auto
 	color: white
 	font-family: 'Tinos', serif
+	overflow-x: hidden
 	width: 1060px // "all container" width (desktop first)
 
 // desktop first
@@ -13,11 +14,23 @@ body
 @import "desktop/footer/_footer.sass"
 @import "desktop/_background-gradients.sass"
 
-@media screen and (max-width: 1059px)
+// tablets widths
+@media screen and (min-width: 768px) and (max-width: 1059px)
 	body
 		width: 768px
 
 	@import "tablet/first-section/_first-section.sass"
-	@import "tablet/products-section/_products-section.sass"
 	@import "tablet/text-section/_text-section.sass"
+	@import "tablet/products-section/_products-section.sass"
+
+
+// mobiles widths
+@media screen and (max-width: 767px)
+	body
+		width: 320px
+
+	@import "mobile/first-section/_first-section.sass"
+	@import "mobile/text-section/_text-section.sass"
+	@import "mobile/products-section/_products-section.sass"
+	@import "mobile/footer/_footer.sass"
 

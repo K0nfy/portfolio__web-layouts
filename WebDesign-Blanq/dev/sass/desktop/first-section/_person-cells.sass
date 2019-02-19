@@ -1,28 +1,20 @@
 .person-cells
+	width: 100%
+	// height: specified by background-cells container
 	display: flex
 	align-items: center
 	position: relative
 	&__cell
 		width: 336px
 		height: 336px
-		position: relative
-		margin-top: -10px
+		position: absolute
+		top: 0
 		background-image: linear-gradient(to bottom, #747474 0%, #8e8e8e 100%)
+		background-repeat: no-repeat
 		border-radius: 50%
 		border: 1px solid grey
 		z-index: 11
-		background-repeat: no-repeat
-		&:before // bg white circle border
-			content: ''
-			position: absolute
-			top: -35px
-			left: -35px
-			width: 406px
-			height: 406px
-			opacity: .1
-			border-radius: 50%
-			background-image: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 100%)
-		&:after // shadow
+		&:after // cells bottom shadow
 			content: ''
 			width: 195px
 			position: absolute
@@ -31,31 +23,52 @@
 			transform: translateX(-50%)
 			box-shadow: 0px 15px 40px 3px black
 			z-index: -1
-		&--main
-			margin: 0 -117px
+		&--first
+			top: 73px
+			left: 117px
+			background-position: 53% 6%
+			background-image: url(../img/first-section/person/James-Adam.jpg)
+		&--middle
 			width: 381px
 			height: 381px
+			top: 55px
+			left: 50%
+			transform: translateX(-50%)
+			background-position: 104% 138%
+			// transparent picture + bg gradient
+			background-image: url(../img/first-section/person/Natali-Grand.png), linear-gradient(to bottom, #747474 0%, #8e8e8e 100%)
 			z-index: 12
-			&:before
-				display: none
-	&__background-cell
-		width: 472px
-		height: 500px
-		position: absolute
-		top: -57px
-		left: -298px
-		border-radius: 50%
-		transform: translateX(100%)
-		opacity: .95
-		background-image: linear-gradient(to bottom, rgba(255,255,255,.4) 25%,rgba(255,255,255,0) 95%)
+		&--last
+			top: 73px
+			right: 117px
+			background-position: 1% 0%
+			background-image: url(../img/first-section/person/Judy-Miles.jpg)
+
 
 .person-cells
-	&--first-person
-		background-position: 53% 6%
-		background-image: url(../img/first-section/person/James-Adam.jpg)
-	&--second-person
-		background-position: 104% 138%
-		background-image: url(../img/first-section/person/Natali-Grand.png), linear-gradient(to bottom, #747474 0%, #8e8e8e 100%) // transparent picture + gradient. workaround
-	&--third-person
-		background-position: 1% 0%
-		background-image: url(../img/first-section/person/Judy-Miles.jpg)
+	&__background-cells // container
+		width: 100%
+		height: 500px // same as biggest bg circle
+		position: relative
+		z-index: 10
+	&__background-cell
+		position: absolute
+		top: 38px
+		width: 406px
+		height: 406px
+		opacity: .1
+		border-radius: 50%
+		background-image: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 100%)
+		&--first
+			left: 85px
+		&--middle
+			width: 472px
+			height: 500px
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+			border-radius: 50%
+			background-image: linear-gradient(to bottom, rgba(255,255,255,.37) 25%,rgba(255,255,255,0) 95%)
+			opacity: .9
+		&--last
+			right: 85px
