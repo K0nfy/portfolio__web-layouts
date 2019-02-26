@@ -1,0 +1,36 @@
+.main-offers__crafts
+	position: relative
+	height: 335px
+	background-image: url(../img/main-offers/crafts.jpg)
+	background-position: -5px -236px
+	&-container-link
+		display: inline-block
+		width: 100%
+		height: 335px // should be same as in the container above
+		transition: linear 0.18s
+		&:before
+			content: ''
+			display: inline-block
+			width: 100%
+			height: 335px // should be same as in the container above
+			background-color: $main-offers__filter--yellow
+		&:hover
+			background-color: $main-offers__filter--black-blue
+	&-caption
+		position: absolute
+		bottom: 0
+		right: 0
+	&-link
+		display: inline-block
+		position: absolute
+		bottom: 0
+		left: -204px
+		width: 204px
+		line-height: 55px // defines height for the inline block
+		text-align: center
+		text-transform: uppercase
+		font-size: 30px
+		color: #fff
+		background-color: rgba(#362a4f, 0.8)
+		&:hover
+			text-decoration: underline

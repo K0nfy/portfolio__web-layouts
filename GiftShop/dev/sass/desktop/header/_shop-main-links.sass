@@ -1,0 +1,37 @@
+.shop-main-links
+	display: flex
+	justify-content: space-between
+	margin-top: 10px
+
+	&__link
+		display: inline-block
+		flex-basis: 21%
+		line-height: 89px // defines height for the inline block
+		text-align: center
+		color: #fff
+		letter-spacing: 1.3px
+		&:hover
+			text-decoration: underline
+
+		&--bigger
+			flex-basis: 27%
+
+		&:nth-child(odd)
+			background-color: $main-blue
+		&:nth-child(even)
+			background-color: $main-red
+
+	&__icon
+		display: inline-block
+		margin-left: 4px
+		vertical-align: -5px
+
+	&__gift-icon
+		width: 23px
+		height: 25px
+		background-image: url(../img/common/gift-icon.png)
+
+	&__cart-icon
+		width: 28px
+		height: 24px
+		background-image: url(../img/common/cart-icon.png)

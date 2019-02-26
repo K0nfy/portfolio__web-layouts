@@ -1,0 +1,21 @@
+.main-offers__jewelry
+	height: 510px
+	position: relative
+	background-image: url(../img/main-offers/jewelry.jpg)
+	background-position: -252px -17px
+	&-container-link
+		display: inline-block
+		width: 100%
+		height: 510px // should be same as in the container above
+		transition: linear 0.18s
+		&:before
+			content: ''
+			display: inline-block
+			width: 100%
+			height: 510px // should be same as in the container above
+			background-color: $main-offers__filter--yellow
+		&:hover
+			background-color: $main-offers__filter--black-blue
+
+
+@import "_jewelry-caption.sass"

@@ -1,5 +1,54 @@
+$ac-w: 1170px // "all container" width (desktop first)
+
 html
 	background-color: #fff
 
 body
-	width: 1170px
+	width: $ac-w
+	margin: auto
+	padding: 10px 0
+	font-family: 'Lato', sans-serif
+
+	overflow-x: hidden // pixel perfect dev
+
+main
+	margin-top: 15px
+
+// standart settings reset
+a
+	text-decoration: none
+
+button
+	background-color: transparent
+	border: none
+	outline: none
+	cursor: pointer
+
+input
+	border: none
+	outline: none
+// standart settings reset end
+
+@import "_variables.sass"
+
+// desktop first
+@import "desktop/header/_header.sass"
+@import "desktop/shop-nav/_shop-nav.sass"
+@import "desktop/main-offers/_main-offers.sass"
+
+
+// tablets widths
+// @media screen and (min-width: 768px) and (max-width: $ac-w - 1px)
+	// body
+	// 	width: 768px
+	// @import ...
+
+// mobiles widths
+// @media screen and (max-width: 767px)
+	// body
+	// 	width: 320px
+	// @import ...
+
+
+// font-family: 'Lato', sans-serif;
+// font-family: 'Libre Baskerville', serif;

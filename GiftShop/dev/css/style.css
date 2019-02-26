@@ -1,0 +1,741 @@
+html {
+  background-color: #fff;
+}
+
+body {
+  width: 1170px;
+  margin: auto;
+  padding: 10px 0;
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+  margin-top: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .main-logo {
+  width: 171px;
+  height: 108px;
+  margin-top: 9px;
+  display: inline-block;
+  background-image: url(../img/header/main-logo.png);
+}
+
+.header .dockToRight-container {
+  width: 530px;
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-main-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.shop-main-links__link {
+  display: inline-block;
+  flex-basis: 21%;
+  line-height: 89px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 1.3px;
+}
+
+.shop-main-links__link:hover {
+  text-decoration: underline;
+}
+
+.shop-main-links__link--bigger {
+  flex-basis: 27%;
+}
+
+.shop-main-links__link:nth-child(odd) {
+  background-color: #05aecc;
+}
+
+.shop-main-links__link:nth-child(even) {
+  background-color: #f0626e;
+}
+
+.shop-main-links__icon {
+  display: inline-block;
+  margin-left: 4px;
+  vertical-align: -5px;
+}
+
+.shop-main-links__gift-icon {
+  width: 23px;
+  height: 25px;
+  background-image: url(../img/common/gift-icon.png);
+}
+
+.shop-main-links__cart-icon {
+  width: 28px;
+  height: 24px;
+  background-image: url(../img/common/cart-icon.png);
+}
+
+.global-nav {
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 1.3px;
+}
+
+.global-nav__link {
+  color: black;
+}
+
+.global-nav__link:hover {
+  text-decoration: underline;
+}
+
+.shop-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 92px;
+  margin-top: 14px;
+  background-color: #05aecc;
+}
+
+.shop-nav__item {
+  align-items: center;
+  position: relative;
+}
+
+.shop-nav__item:hover {
+  background-color: #fff;
+}
+
+.shop-nav__item:hover .shop-nav__category-name {
+  color: #f0626e;
+}
+
+.shop-nav__category-name {
+  display: inline-block;
+  line-height: 71px;
+  padding: 0 23px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.shop-nav-category__item-picture {
+  width: 76px;
+  height: 76px;
+  margin-right: 14px;
+  display: inline-block;
+}
+
+.shop-nav-category__item-picture img {
+  width: 76px;
+  height: 76px;
+}
+
+.shop-nav-category__item-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.shop-nav-category__item-name {
+  letter-spacing: 1.3px;
+  color: #f0626e;
+}
+
+.shop-nav-category__item-description {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.shop-nav-category__details-link {
+  display: inline-block;
+  width: 115px;
+  line-height: 22px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  background-color: #05aecc;
+}
+
+.shop-nav__dropdown {
+  position: relative;
+  z-index: 1;
+}
+
+.shop-nav__dropdown-content {
+  width: 225px;
+  visibility: hidden;
+  opacity: 0;
+  padding: 0 20px;
+  position: absolute;
+  background-color: #fff;
+  text-shadow: none;
+  box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
+  transition: linear 0.2s;
+}
+
+.shop-nav__dropdown-item {
+  display: flex;
+  position: relative;
+  margin: 20px 0 40px 0;
+}
+
+.shop-nav__dropdown-item:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.4);
+}
+
+.shop-nav__dropdown-item:last-of-type {
+  margin-bottom: 20px;
+}
+
+.shop-nav__dropdown-showAll-link {
+  display: block;
+  margin: 35px 0 15px 0;
+  letter-spacing: 1.3px;
+  color: #f0626e;
+}
+
+.shop-nav__dropdown-showAll-link:hover {
+  text-decoration: underline;
+}
+
+.shop-nav__item:hover .shop-nav__dropdown-content {
+  visibility: visible;
+  opacity: 0.95;
+}
+
+.main-offers {
+  display: flex;
+  justify-content: space-between;
+  height: 1086px;
+}
+
+.main-offers__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-offers__column:nth-of-type(1) {
+  width: 670px;
+}
+
+.main-offers__column:nth-of-type(2) {
+  width: 495px;
+}
+
+.main-offers__checkout {
+  display: flex;
+}
+
+.main-offers__checkout-to-wishlist, .main-offers__checkout-to-cart {
+  width: 52px;
+  height: 55px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  vertical-align: middle;
+}
+
+.main-offers__checkout-to-wishlist:hover .main-offers__checkout-hint, .main-offers__checkout-to-cart:hover .main-offers__checkout-hint {
+  visibility: visible;
+  opacity: 1;
+}
+
+.main-offers__checkout-to-wishlist {
+  background-image: url(../img/common/gift-icon.png);
+  background-color: #00a1be;
+}
+
+.main-offers__checkout-to-cart {
+  background-image: url(../img/common/cart-icon.png);
+  background-color: #f0626e;
+}
+
+.main-offers__checkout-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 55px;
+  color: #fff;
+  font-size: 24px;
+  background-color: #434343;
+  vertical-align: middle;
+}
+
+.main-offers__checkout-dollar {
+  margin: 3px 2px 0 0;
+  font-size: 15px;
+}
+
+.main-offers__checkout-sup-price {
+  top: -0.3em;
+  font-size: 15px;
+}
+
+.main-offers__checkout-hint {
+  visibility: hidden;
+  opacity: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  top: -55%;
+  left: -51%;
+  padding: 5px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid #f0626e;
+  transition: linear 0.2s;
+}
+
+.main-offers__checkout-hint:before, .main-offers__checkout-hint:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -22px;
+  left: 42px;
+  border-style: solid;
+}
+
+.main-offers__checkout-hint:before {
+  border-color: #f0626e transparent transparent transparent;
+  border-width: 11px;
+}
+
+.main-offers__checkout-hint:after {
+  bottom: -20px;
+  border-color: #fff transparent transparent transparent;
+  border-width: 11px;
+}
+
+.main-offers__mens-wear {
+  height: 570px;
+  position: relative;
+  background-image: url(../img/main-offers/mens-wear.jpg);
+  background-position: -106px -10px;
+}
+
+.main-offers__mens-wear-container-link {
+  display: inline-block;
+  width: 100%;
+  height: 570px;
+  transition: linear 0.18s;
+}
+
+.main-offers__mens-wear-container-link:before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 570px;
+  background-color: rgba(255, 167, 0, 0.1);
+}
+
+.main-offers__mens-wear-container-link:hover {
+  background-color: rgba(0, 0, 51, 0.5);
+}
+
+.main-offers__mens-wear-caption {
+  width: 319px;
+  display: inline-block;
+  padding: 15px;
+  position: absolute;
+  bottom: 59px;
+  text-transform: uppercase;
+  background-color: rgba(54, 42, 79, 0.8);
+}
+
+.main-offers__mens-wear-caption a:hover {
+  text-decoration: underline;
+}
+
+.main-offers__mens-wear-title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 43px;
+}
+
+.main-offers__mens-wear-title a {
+  color: #f0626e;
+}
+
+.main-offers__mens-wear-description {
+  font-size: 14px;
+}
+
+.main-offers__mens-wear-description a {
+  color: #fff;
+}
+
+.main-offers__mens-wear-extra-caption {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  padding: 14px;
+  background-color: #f0626e;
+}
+
+.main-offers__mens-wear-extra-caption a {
+  display: inline-block;
+  width: 321px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.main-offers__mens-wear-extra-caption a:hover {
+  text-decoration: underline;
+}
+
+.main-offers__search {
+  height: 171px;
+}
+
+.search-form {
+  height: 171px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0626e;
+}
+
+.search-form__input {
+  width: 435px;
+  height: 71px;
+  position: relative;
+  padding: 0 25px;
+  letter-spacing: 1.3px;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.search-form__input:invalid + .search-form__custom-placeholder {
+  display: none;
+}
+
+.search-form__input-container {
+  position: relative;
+  background-color: #fff;
+}
+
+.search-form__custom-placeholder {
+  width: 485px;
+  height: 71px;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.search-form__custom-placeholder span {
+  color: #C6C6C6;
+}
+
+.search-form__custom-placeholder-text {
+  position: absolute;
+  top: 27px;
+  left: 25px;
+}
+
+.search-form__button {
+  width: 58px;
+  height: 58px;
+  margin-left: 25px;
+  background-image: url(../img/common/search-icon.png);
+  background-repeat: no-repeat;
+}
+
+.main-offers__crafts {
+  position: relative;
+  height: 335px;
+  background-image: url(../img/main-offers/crafts.jpg);
+  background-position: -5px -236px;
+}
+
+.main-offers__crafts-container-link {
+  display: inline-block;
+  width: 100%;
+  height: 335px;
+  transition: linear 0.18s;
+}
+
+.main-offers__crafts-container-link:before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 335px;
+  background-color: rgba(255, 167, 0, 0.1);
+}
+
+.main-offers__crafts-container-link:hover {
+  background-color: rgba(0, 0, 51, 0.5);
+}
+
+.main-offers__crafts-caption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.main-offers__crafts-link {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: -204px;
+  width: 204px;
+  line-height: 55px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #fff;
+  background-color: rgba(54, 42, 79, 0.8);
+}
+
+.main-offers__crafts-link:hover {
+  text-decoration: underline;
+}
+
+.main-offers__womens-wear {
+  height: 320px;
+  position: relative;
+  background-image: url(../img/main-offers/womens-wear.jpg);
+  background-position: -54px -8px;
+}
+
+.main-offers__womens-wear-container-link {
+  display: inline-block;
+  width: 100%;
+  height: 320px;
+  transition: linear 0.18s;
+}
+
+.main-offers__womens-wear-container-link:before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 320px;
+  background-color: rgba(255, 167, 0, 0.1);
+}
+
+.main-offers__womens-wear-container-link:hover {
+  background-color: rgba(0, 0, 51, 0.5);
+}
+
+.main-offers__womens-wear-caption {
+  width: 238px;
+  display: inline-block;
+  padding: 15px;
+  position: absolute;
+  bottom: 7px;
+  text-transform: uppercase;
+  background-color: rgba(54, 42, 79, 0.8);
+}
+
+.main-offers__womens-wear-caption a:hover {
+  text-decoration: underline;
+}
+
+.main-offers__womens-wear-title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 25px;
+}
+
+.main-offers__womens-wear-title a {
+  color: #f0626e;
+}
+
+.main-offers__womens-wear-description {
+  font-size: 13px;
+}
+
+.main-offers__womens-wear-description a {
+  color: #fff;
+}
+
+.main-offers__baby-set {
+  height: 245px;
+  position: relative;
+  background-image: url(../img/main-offers/baby-set.jpg);
+  background-position: -4px -51px;
+}
+
+.main-offers__baby-set-container-link {
+  display: inline-block;
+  width: 100%;
+  height: 245px;
+  transition: linear 0.18s;
+}
+
+.main-offers__baby-set-container-link:before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 245px;
+  background-color: rgba(255, 167, 0, 0.1);
+}
+
+.main-offers__baby-set-container-link:hover {
+  background-color: rgba(0, 0, 51, 0.5);
+}
+
+.main-offers__baby-set-caption {
+  position: absolute;
+  display: flex;
+  bottom: 29px;
+  right: 0;
+}
+
+.main-offers__baby-set-caption-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #05aecc;
+}
+
+.main-offers__baby-set-caption-title > a {
+  display: block;
+  width: 94px;
+  letter-spacing: 1.3px;
+  text-align: center;
+  color: #fff;
+}
+
+.main-offers__baby-set-caption-title > a:hover {
+  text-decoration: underline;
+}
+
+.main-offers__jewelry {
+  height: 510px;
+  position: relative;
+  background-image: url(../img/main-offers/jewelry.jpg);
+  background-position: -252px -17px;
+}
+
+.main-offers__jewelry-container-link {
+  display: inline-block;
+  width: 100%;
+  height: 510px;
+  transition: linear 0.18s;
+}
+
+.main-offers__jewelry-container-link:before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 510px;
+  background-color: rgba(255, 167, 0, 0.1);
+}
+
+.main-offers__jewelry-container-link:hover {
+  background-color: rgba(0, 0, 51, 0.5);
+}
+
+.main-offers__jewelry-title {
+  display: flex;
+  align-items: center;
+  padding-top: 35px;
+  height: 362px;
+  width: 87px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  background-color: rgba(54, 42, 79, 0.8);
+  color: #fff;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 44px;
+  text-transform: uppercase;
+}
+
+.main-offers__jewelry a:hover {
+  text-decoration: underline;
+}
+
+.main-offers__jewelry-link {
+  display: inline-block;
+  position: relative;
+  width: 97px;
+  height: 86px;
+  z-index: 2;
+}
+
+.main-offers__jewelry-mark {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 131px;
+  width: 97px;
+  height: 86px;
+  background-color: #f0626e;
+}
+
+.main-offers__jewelry-mark:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -7px;
+  left: 3px;
+  border-style: solid;
+  border-color: transparent transparent transparent #c6535d;
+  border-width: 7px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.main-offers__jewelry-mark-cell {
+  display: inline-block;
+  position: absolute;
+  left: 23px;
+  top: 17px;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.main-offers__jewelry-mark-cell > svg {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  fill: #f0626e;
+}

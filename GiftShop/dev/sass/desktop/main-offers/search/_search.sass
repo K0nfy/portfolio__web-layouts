@@ -1,0 +1,48 @@
+.main-offers__search
+	height: 171px
+
+.search-form
+	height: 171px
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	background-color: #f0626e
+	&__input
+		width: 435px
+		height: 71px
+		position: relative
+		padding: 0 25px
+		letter-spacing: 1.3px
+		background-color: transparent
+		z-index: 2
+
+		&:invalid + .search-form__custom-placeholder
+			display: none
+
+	&__input-container
+		position: relative
+		background-color: #fff
+
+	&__custom-placeholder
+		width: 485px
+		height: 71px
+		position: absolute
+		top: 0
+		background-color: #fff
+		z-index: 1
+		
+		& span
+			color: #C6C6C6
+
+		&-text
+			position: absolute
+			top: 27px
+			left: 25px
+
+	&__button
+		width: 58px
+		height: 58px
+		margin-left: 25px
+		background-image: url(../img/common/search-icon.png)
+		background-repeat: no-repeat

@@ -1,0 +1,60 @@
+.main-offers__jewelry
+	&-caption
+	&-title
+		display: flex
+		align-items: center
+		padding-top: 35px
+		height: 362px
+		width: 87px
+		// padding: 35px 20px 0 0
+		position: absolute
+		right: 0
+		bottom: 0
+		transform: rotate(-180deg)
+		writing-mode: vertical-rl
+		background-color: rgba(#362a4f, 0.8)
+		color: #fff
+		font-family: 'Libre Baskerville', serif
+		font-size: 44px
+		text-transform: uppercase
+	& a:hover
+		text-decoration: underline
+	&-link
+		display: inline-block
+		position: relative
+		width: 97px
+		height: 86px
+		z-index: 2
+	&-mark
+		display: inline-block
+		position: absolute
+		right: 0
+		top: 131px
+		width: 97px
+		height: 86px
+		background-color: $main-red
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			bottom: -7px
+			left: 3px
+			border-style: solid
+			border-color: transparent transparent transparent #c6535d
+			border-width: 7px
+			transform: rotate(-45deg)
+		&-cell
+			display: inline-block
+			position: absolute
+			left: 23px
+			top: 17px
+			width: 53px
+			height: 53px
+			border-radius: 50%
+			background-color: #fff
+			z-index: 1
+			& > svg
+				position: absolute
+				top: 14px
+				left: 20px
+				fill: $main-red
