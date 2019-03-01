@@ -1,0 +1,105 @@
+.footer
+	position: relative
+	margin-top: 31px
+	padding-bottom: 10px
+	&:before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 1px
+		top: 0
+		left: 0
+		background-color: #b9b9b9
+	&:after
+		content: ''
+		position: absolute
+		width: 100%
+		height: 1px
+		bottom: 0
+		left: 0
+		background-color: #b9b9b9
+	&-links
+		&__container
+			position: relative
+			display: flex
+			justify-content: space-between
+			padding: 50px 0 43px 22px
+			&:after
+				content: ''
+				position: absolute
+				width: 100%
+				height: 1px
+				bottom: 0
+				left: 0
+				background-color: #b9b9b9
+		&__column
+			display: flex
+			flex-direction: column
+		&__column-header
+			margin-bottom: 35px
+			text-transform: uppercase
+			font-size: 25px
+			&--second
+				margin: 29px 0 15px 1px
+		&__column-link
+			font-size: 16px
+			line-height: 30px
+			color: #000
+			&:hover
+				text-decoration: underline
+		&__contact-links
+			display: flex
+		&__contact-link
+			display: inline-block
+			width: 54px
+			height: 54px
+			margin-right: 10px
+			background-repeat: no-repeat
+			background-position: center center
+			box-sizing: border-box
+			&--rss
+				background-color: #f8bc2e
+				background-image: url(../img/footer/footer-links__rss-icon.png)
+			&--facebook
+				background-color: #39599f
+				background-image: url(../img/footer/footer-links__facebook-icon.png)
+			&--twitter
+				background-color: #45b0e3
+				background-image: url(../img/footer/footer-links__twitter-icon.png)
+			&--flickr
+				border: 1px solid #ddd
+				background-color: transparent
+				background-image: url(../img/footer/footer-links__flickr-icon.png)
+			&--google
+				background-color: #1872bf
+				background-image: url(../img/footer/footer-links__google-icon.png)
+
+
+.footer-signup-form
+	width: 377px
+	margin-top: 8px
+	margin-bottom: 29wpx
+	&__input
+		width: 100%
+		height: 69px
+		border: 1px solid #ddd
+		box-sizing: border-box
+		font-size: 14px
+		text-align: center
+	&__button
+		height: 52px
+		text-transform: uppercase
+		font-size: 14px
+		color: #fff
+		background-color: $main-blue
+		width: 100%
+
+.footer-copyrights
+	display: flex
+	justify-content: space-between
+	padding: 11px 8px 0 24px
+	font-size: 14px
+	& a
+		color: $main-red
+		&:hover
+			text-decoration: underline

@@ -6,12 +6,28 @@
     <title>GiftShop.psd</title>
     <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicons stuff -->
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
 	<header class="header">
-		<div class="main-logo"></div>
+		<div class="main-logo">
+			<a href="#" class="header__home-link"></a>
+			<h1 class="header__main-title">
+				<span class="header__main-title--first-part">gift</span><span class="header__main-title--second-part">Shop</span>
+			</h1>
+		</div>
 		<div class="dockToRight-container">
 			<nav class="global-nav">
 				<a class="global-nav__link" href="#/sell">Sell</a>
@@ -341,18 +357,22 @@
 	</nav>
 	
 	<main>
+
 		<div class="main-offers">
+
 			<div class="main-offers__column">
+
 				<div class="main-offers__offer main-offers__mens-wear">
 					<a href="#/mens-wear" class="main-offers__mens-wear-container-link"></a>
 					<div class="main-offers__mens-wear-caption">
-						<div class="main-offers__mens-wear-title"><a href="#/mens-wear">Men's wear</a></div>
+						<div class="main-offers__mens-wear-title"><a href="#/mens-wear">Men’‎s wear</a></div>
 						<div class="main-offers__mens-wear-description"><a href="#/mens-wear">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem</a></div>
 					</div>
 					<div class="main-offers__mens-wear-extra-caption">
 						<a href="#/mens-wear">Lorem ipsum is simply dummy text</a>
 					</div>
 				</div>
+
 				<div class="main-offers__search">
 					<form class="search-form">
 						<div class="search-form__input-container">
@@ -364,43 +384,49 @@
 						<button class="search-form__button"></button>
 					</form>
 				</div>
+
 				<div class="main-offers__offer main-offers__crafts">
 					<a href="#/crafts" class="main-offers__crafts-container-link"></a>
 					<div class="main-offers__crafts-caption">
 						<a href="#/crafts" class="main-offers__crafts-link">Crafts</a>
-						<div class="main-offers__checkout">
-							<button class="main-offers__checkout-to-wishlist"><span class="main-offers__checkout-hint">Add to wishlist</span></button>
-							<button class="main-offers__checkout-to-cart"><span class="main-offers__checkout-hint">Add to cart</span></button>
-							<div class="main-offers__checkout-price">
-								<span class="main-offers__checkout-dollar">$</span>99.<sup class="main-offers__checkout-sup-price">00</sup>
+						<div class="product-checkout">
+							<button class="product-checkout__to-wishlist"><span class="product-checkout__hint">Add to wishlist</span></button>
+							<button class="product-checkout__to-cart"><span class="product-checkout__hint">Add to cart</span></button>
+							<div class="product-checkout__price">
+								<span class="product-checkout__dollar">$</span>99.<sup class="product-checkout__sup-price">00</sup>
 							</div>
 						</div>
 					</div>
 				</div>
+
 			</div>
+
 			<div class="main-offers__column">
+
 				<div class="main-offers__offer main-offers__womens-wear">
 					<a href="#/womens-wear" class="main-offers__womens-wear-container-link"></a>
 					<div class="main-offers__womens-wear-caption">
-						<div class="main-offers__womens-wear-title"><a href="#/womens-wear">Women's wear</a></div>
+						<div class="main-offers__womens-wear-title"><a href="#/womens-wear">Women’‎s wear</a></div>
 						<div class="main-offers__womens-wear-description"><a href="#/womens-wear">Lorem Ipsum is simply dummy text of the printing and typesetting</a></div>
 					</div>
 				</div>
+
 				<div class="main-offers__offer main-offers__baby-set">
 					<a href="#/baby-set" class="main-offers__baby-set-container-link"></a>
 					<div class="main-offers__baby-set-caption">
 						<div class="main-offers__baby-set-caption-title">
 							<a href="#/baby-set" class="main-offers__baby-set-link">Baby set</a>
 						</div>
-						<div class="main-offers__checkout">
-							<button class="main-offers__checkout-to-wishlist"><span class="main-offers__checkout-hint">Add to wishlist</span></button>
-							<button class="main-offers__checkout-to-cart"><span class="main-offers__checkout-hint">Add to cart</span></button>
-							<div class="main-offers__checkout-price">
-								<span class="main-offers__checkout-dollar">$</span>99.<sup class="main-offers__checkout-sup-price">00</sup>
+						<div class="product-checkout">
+							<button class="product-checkout__to-wishlist"><span class="product-checkout__hint">Add to wishlist</span></button>
+							<button class="product-checkout__to-cart"><span class="product-checkout__hint">Add to cart</span></button>
+							<div class="product-checkout__price">
+								<span class="product-checkout__dollar">$</span>99.<sup class="product-checkout__sup-price">00</sup>
 							</div>
 						</div>
 					</div>
 				</div>
+
 				<div class="main-offers__offer main-offers__jewelry">
 					<a href="#/jewelry" class="main-offers__jewelry-container-link"></a>
 					<div class="main-offers__jewelry-caption">
@@ -408,17 +434,322 @@
 						<span class="main-offers__jewelry-mark">
 							<a href="#/jewelry" class="main-offers__jewelry-link"></a>
 							<span class="main-offers__jewelry-mark-cell">
-								<svg width="15px" viewBox="0 0 300 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M 50 50 L 100 50 L 250 250 L 100 450 L 50 450 L 200 250 Z"></path>
+								<svg width="16px" viewBox="0 0 375 575" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M 100 25 L 350 300 L 100 550 L 25 550 L 275 300 L 25 25 Z"></path>
 								</svg>
 							</span>
 						</span>
 					</div>
 				</div>
+
 			</div>
+
 		</div>
+		
+		<div class="new-products">
+
+			<div class="new-products__header">
+				<div class="new-products__title">New Products</div>
+				<div class="new-products__slider-arrows">
+					<div class="new-products__slider-arrow new-products__slider-arrow--left">
+						<svg width="16px" viewBox="0 0 375 575" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M 350 25 L 100 300 L 350 550 L 275 550 L 25 300 L 275 25 Z"></path>
+						</svg>
+					</div>
+					<div class="new-products__slider-arrow new-products__slider-arrow--right">
+						<svg width="16px" viewBox="0 0 375 575" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M 100 25 L 350 300 L 100 550 L 25 550 L 275 300 L 25 25 Z"></path>
+						</svg>
+					</div>
+				</div>
+			</div>
+
+			<div class="new-products__slider">
+				<div class="new-products__slide new-products__product-name--q">
+					<a href="#some-new-product-category/product--q" class="new-products__slide-container-link"></a>
+					<div class="new-products__slide-caption">
+						<div class="new-products__caption-product-name"><a href="#some-new-product-category/product--q">Product name</a></div>
+						<div class="product-checkout">
+							<button class="product-checkout__to-wishlist"><span class="product-checkout__hint">Add to wishlist</span></button>
+							<button class="product-checkout__to-cart"><span class="product-checkout__hint">Add to cart</span></button>
+							<div class="product-checkout__price">
+								<span class="product-checkout__dollar">$</span>99.<sup class="product-checkout__sup-price">00</sup>
+							</div>
+						</div>
+					</div>
+					<div class="new-products__product-name">Product name</div>
+				</div>
+				<div class="new-products__slide new-products__product-name--w">
+					<a href="#some-new-product-category/product--w" class="new-products__slide-container-link"></a>
+					<div class="new-products__slide-caption">
+						<div class="new-products__caption-product-name"><a href="#some-new-product-category/product--w">Product name</a></div>
+						<div class="product-checkout">
+							<button class="product-checkout__to-wishlist"><span class="product-checkout__hint">Add to wishlist</span></button>
+							<button class="product-checkout__to-cart"><span class="product-checkout__hint">Add to cart</span></button>
+							<div class="product-checkout__price">
+								<span class="product-checkout__dollar">$</span>99.<sup class="product-checkout__sup-price">00</sup>
+							</div>
+						</div>
+					</div>
+					<div class="new-products__product-name">Product name</div>
+				</div>
+				<div class="new-products__slide new-products__product-name--e">
+					<a href="#some-new-product-category/product--e" class="new-products__slide-container-link"></a>
+					<div class="new-products__slide-caption">
+						<div class="new-products__caption-product-name"><a href="#some-new-product-category/product--e">Product name</a></div>
+						<div class="product-checkout">
+							<button class="product-checkout__to-wishlist"><span class="product-checkout__hint">Add to wishlist</span></button>
+							<button class="product-checkout__to-cart"><span class="product-checkout__hint">Add to cart</span></button>
+							<div class="product-checkout__price">
+								<span class="product-checkout__dollar">$</span>99.<sup class="product-checkout__sup-price">00</sup>
+							</div>
+						</div>
+					</div>
+					<div class="new-products__product-name">Product name</div>
+				</div>
+				<div class="new-products__slide new-products__product-name--r">
+					<a href="#some-new-product-category/product--r" class="new-products__slide-container-link"></a>
+					<div class="new-products__slide-caption">
+						<div class="new-products__caption-product-name"><a href="#some-new-product-category/product--r">Product name</a></div>
+						<div class="product-checkout">
+							<button class="product-checkout__to-wishlist"><span class="product-checkout__hint">Add to wishlist</span></button>
+							<button class="product-checkout__to-cart"><span class="product-checkout__hint">Add to cart</span></button>
+							<div class="product-checkout__price">
+								<span class="product-checkout__dollar">$</span>99.<sup class="product-checkout__sup-price">00</sup>
+							</div>
+						</div>
+					</div>
+					<div class="new-products__product-name">Product name</div>
+				</div>
+				<div class="new-products__slide new-products__product-name--t">
+					<a href="#some-new-product-category/product--t" class="new-products__slide-container-link"></a>
+					<div class="new-products__slide-caption">
+						<div class="new-products__caption-product-name"><a href="#some-new-product-category/product--t">Product name</a></div>
+						<div class="product-checkout">
+							<button class="product-checkout__to-wishlist"><span class="product-checkout__hint">Add to wishlist</span></button>
+							<button class="product-checkout__to-cart"><span class="product-checkout__hint">Add to cart</span></button>
+							<div class="product-checkout__price">
+								<span class="product-checkout__dollar">$</span>99.<sup class="product-checkout__sup-price">00</sup>
+							</div>
+						</div>
+					</div>
+					<div class="new-products__product-name">Product name</div>
+				</div>
+				<div class="new-products__slide new-products__product-name--y">
+					<a href="#some-new-product-category/product--y" class="new-products__slide-container-link"></a>
+					<div class="new-products__slide-caption">
+						<div class="new-products__caption-product-name"><a href="#some-new-product-category/product--y">Product name</a></div>
+						<div class="product-checkout">
+							<button class="product-checkout__to-wishlist"><span class="product-checkout__hint">Add to wishlist</span></button>
+							<button class="product-checkout__to-cart"><span class="product-checkout__hint">Add to cart</span></button>
+							<div class="product-checkout__price">
+								<span class="product-checkout__dollar">$</span>99.<sup class="product-checkout__sup-price">00</sup>
+							</div>
+						</div>
+					</div>
+					<div class="new-products__product-name">Product name</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="featured-products">
+
+			<div class="featured-products__header">
+				<div class="featured-products__title">Featured Products</div>
+				<div class="featured-products__slider-arrows">
+					<div class="featured-products__slider-arrow featured-products__slider-arrow--left">
+						<svg width="16px" viewBox="0 0 375 575" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M 350 25 L 100 300 L 350 550 L 275 550 L 25 300 L 275 25 Z"></path>
+						</svg>
+					</div>
+					<div class="featured-products__slider-arrow featured-products__slider-arrow--right">
+						<svg width="16px" viewBox="0 0 375 575" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M 100 25 L 350 300 L 100 550 L 25 550 L 275 300 L 25 25 Z"></path>
+						</svg>
+					</div>
+				</div>
+			</div>
+
+			<div class="featured-products__slider">
+				<div class="featured-products__slide">
+					<div class="featured-products__discount-badge">20% off</div>
+					<div class="featured-products__slide-image"><img src="img/featured-products/q.jpg" alt="Product Name"></div>
+					<div class="featured-products__slide-text">
+						<div class="featured-products__slide-title"><a href="#/product-category/product--q">Product Title here</a></div>
+						<div class="featured-products__slide-descr">Short Description here</div>
+					</div>
+					<div class="slide-checkout">
+						<button class="slide-checkout__customize"></button>
+						<button class="slide-checkout__to-wishlist"></button>
+						<button class="slide-checkout__to-cart"></button>
+						<div class="slide-checkout__price"><span class="slide-checkout__dollar">$</span>99.<sup class="slide-checkout__sup-price">00</sup></div>
+					</div>
+				</div>
+				<div class="featured-products__slide">
+					<div class="featured-products__slide-image"><img src="img/featured-products/w.jpg" alt="Product Name"></div>
+					<div class="featured-products__slide-text">
+						<div class="featured-products__slide-title"><a href="#/product-category/product--w">Product Title here</a></div>
+						<div class="featured-products__slide-descr">Short Description here</div>
+					</div>
+					<div class="slide-checkout">
+						<button class="slide-checkout__customize"></button>
+						<button class="slide-checkout__to-wishlist"></button>
+						<button class="slide-checkout__to-cart"></button>
+						<div class="slide-checkout__price"><span class="slide-checkout__dollar">$</span>99.<sup class="slide-checkout__sup-price">00</sup></div>
+					</div>
+				</div>
+				<div class="featured-products__slide">
+					<div class="featured-products__new-badge">New</div>
+					<div class="featured-products__slide-image"><img src="img/featured-products/e.jpg" alt="Product Name"></div>
+					<div class="featured-products__slide-text">
+						<div class="featured-products__slide-title"><a href="#/product-category/product--e">Product Title here</a></div>
+						<div class="featured-products__slide-descr featured-products__slide-new-descr">Short Description here</div>
+					</div>
+					<div class="slide-checkout">
+						<button class="slide-checkout__customize"></button>
+						<button class="slide-checkout__to-wishlist"></button>
+						<button class="slide-checkout__to-cart"></button>
+						<div class="slide-checkout__price slide-checkout__new-price"><span class="slide-checkout__dollar">$</span>99.<sup class="slide-checkout__sup-price">00</sup></div>
+					</div>
+				</div>
+				<div class="featured-products__slide">
+					<div class="featured-products__slide-image"><img src="img/featured-products/r.jpg" alt="Product Name"></div>
+					<div class="featured-products__slide-text">
+						<div class="featured-products__slide-title"><a href="#/product-category/product--r">Product Title here</a></div>
+						<div class="featured-products__slide-descr">Short Description here</div>
+					</div>
+					<div class="slide-checkout">
+						<button class="slide-checkout__customize"></button>
+						<button class="slide-checkout__to-wishlist"></button>
+						<button class="slide-checkout__to-cart"></button>
+						<div class="slide-checkout__price"><span class="slide-checkout__dollar">$</span>99.<sup class="slide-checkout__sup-price">00</sup></div>
+					</div>
+				</div>
+				<div class="featured-products__slide">
+					<div class="featured-products__slide-image"><img src="img/featured-products/t.jpg" alt="Product Name"></div>
+					<div class="featured-products__slide-text">
+						<div class="featured-products__slide-title"><a href="#/product-category/product--t">Product Title here</a></div>
+						<div class="featured-products__slide-descr">Short Description here</div>
+					</div>
+					<div class="slide-checkout">
+						<button class="slide-checkout__customize"></button>
+						<button class="slide-checkout__to-wishlist"></button>
+						<button class="slide-checkout__to-cart"></button>
+						<div class="slide-checkout__price"><span class="slide-checkout__dollar">$</span>99.<sup class="slide-checkout__sup-price">00</sup></div>
+					</div>
+				</div>
+				<div class="featured-products__slide">
+					<div class="featured-products__slide-image"><img src="img/featured-products/y.jpg" alt="Product Name"></div>
+					<div class="featured-products__slide-text">
+						<div class="featured-products__slide-title"><a href="#/product-category/product--y">Product Title here</a></div>
+						<div class="featured-products__slide-descr">Short Description here</div>
+					</div>
+					<div class="slide-checkout">
+						<button class="slide-checkout__customize"></button>
+						<button class="slide-checkout__to-wishlist"></button>
+						<button class="slide-checkout__to-cart"></button>
+						<div class="slide-checkout__price"><span class="slide-checkout__dollar">$</span>99.<sup class="slide-checkout__sup-price">00</sup></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	
+		<div class="who-we-are">
+
+			<div class="who-we-are__header">
+				<div class="who-we-are__title">Who We Are</div>
+			</div>
+
+			<p class="who-we-are__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+		</div>
+
+		<div class="cta-banners">
+
+			<div class="cta-banners__container">
+				<div class="cta-banners__banner cta-banners__banner-products">
+					<a href="#/catalog" class="cta-banners__banner-link"></a>
+					<div class="cta-banners__banner-image cta-banners__banner-image-products"></div>
+					<div class="cta-banners__banner-text">Choose Products</div>
+				</div>
+				<div class="cta-banners__banner cta-banners__banner-sign-in">
+					<a href="#/sign-in" class="cta-banners__banner-link"></a>
+					<div class="cta-banners__banner-image cta-banners__banner-image-signin"></div>
+					<div class="cta-banners__banner-text">Register / LogIn</div>
+				</div>
+				<div class="cta-banners__banner cta-banners__banner-checkout">
+					<a href="#/cart" class="cta-banners__banner-link"></a>
+					<div class="cta-banners__banner-image cta-banners__banner-image-checkout"></div>
+					<div class="cta-banners__banner-text">Checkout</div>
+				</div>
+			</div>
+
+			<button class="cta-banners__register-button">Register Now</button>
+
+		</div>
+
+		<footer class="footer">
+
+			<div class="footer-links__container">
+				<div class="footer-links__column footer-links__column-shopping">
+					<div class="footer-links__column-header">Shopping with us</div>
+					<a href="#/faq/why-shop-with-us" class="footer-links__column-link">Why shop with us</a>
+					<a href="#/faq/how-it-works" class="footer-links__column-link">How it works</a>
+					<a href="#" class="footer-links__column-link">Delivery</a>
+					<a href="#" class="footer-links__column-link">Returns</a>
+					<a href="#" class="footer-links__column-link">Where's my order</a>
+					<a href="#" class="footer-links__column-link">Contact & Help</a>
+					<a href="#" class="footer-links__column-link">Wedding list</a>
+					<a href="#" class="footer-links__column-link">Wish lists</a>
+					<a href="#" class="footer-links__column-link">Gift vouchers</a>
+				</div>
+				<div class="footer-links__column footer-links__column-about">
+					<div class="footer-links__column-header">About us</div>
+					<a href="#" class="footer-links__column-link">Our story</a>
+					<a href="#" class="footer-links__column-link">Customer contact</a>
+					<a href="#" class="footer-links__column-link">Awards</a>
+					<a href="#" class="footer-links__column-link">Press center</a>
+					<a href="#" class="footer-links__column-link">Work with us</a>
+					<a href="#" class="footer-links__column-link">Terms & Conditions</a>
+					<a href="#" class="footer-links__column-link">Privacy & Cookies</a>
+				</div>
+				<div class="footer-links__column footer-links__column-selling">
+					<div class="footer-links__column-header">Selling with us</div>
+					<a href="#" class="footer-links__column-link">Why join?</a>
+					<a href="#" class="footer-links__column-link">Faqs</a>
+					<a href="#" class="footer-links__column-link">Apply to sell with us</a>
+					<a href="#" class="footer-links__column-link">Affiliates</a>
+				</div>
+				<div class="footer-links__column footer-links__contacts">
+					<div class="footer-links__column-header">Signup newsletter</div>
+					<form action="" class="footer-signup-form">
+						<input type="text" class="footer-signup-form__input" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="E.G.: ABC@DOMAIN.COM">
+						<button class="footer-signup-form__button">Subscribe now</button>
+					</form>
+					<div class="footer-links__column-header footer-links__column-header--second">Keep in touch</div>
+					<div class="footer-links__contact-links">
+						<a href="#/rss-link" class="footer-links__contact-link footer-links__contact-link--rss"></a>
+						<a href="#/facebook-link" class="footer-links__contact-link footer-links__contact-link--facebook"></a>
+						<a href="#/twitter-link" class="footer-links__contact-link footer-links__contact-link--twitter"></a>
+						<a href="#/flickr-link" class="footer-links__contact-link footer-links__contact-link--flickr"></a>
+						<a href="#/google-link" class="footer-links__contact-link footer-links__contact-link--google"></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-copyrights">
+				<p>Copyright &copy; 2014 Gift Shop,  All rights reserved</p>
+				<p>Designed by <a href="http://blazrobar.com/free-psd-website-templates/modern-modular-gift-shop-e-commerce-website-psd-design/" target="_blank" title="I don't know where is the website of the author, so here is the link to place where I downloaded the template">Amysxain</a></p>
+			</div>
+
+		</footer>
+
 	</main>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 

@@ -12,7 +12,7 @@ body
 	overflow-x: hidden // pixel perfect dev
 
 main
-	margin-top: 15px
+	margin: 15px 0 28px 0
 
 // standart settings reset
 a
@@ -32,10 +32,17 @@ input
 @import "_variables.sass"
 
 // desktop first
+// common
+@import "desktop/_product-checkout.sass"
+// sections
 @import "desktop/header/_header.sass"
 @import "desktop/shop-nav/_shop-nav.sass"
 @import "desktop/main-offers/_main-offers.sass"
-
+@import "desktop/new-products/_new-products.sass"
+@import "desktop/featured-products/_featured-products.sass"
+@import "desktop/who-we-are/_who-we-are.sass"
+@import "desktop/cta-banners/_cta-banners.sass"
+@import "desktop/footer/_footer.sass"
 
 // tablets widths
 // @media screen and (min-width: 768px) and (max-width: $ac-w - 1px)

@@ -2,17 +2,42 @@
 	display: flex
 	justify-content: space-between
 
-	& .main-logo
-		width: 171px
-		height: 108px
-		margin-top: 9px
-		display: inline-block
-		background-image: url(../img/header/main-logo.png)
-		
 	& .dockToRight-container
 		width: 530px
 		display: flex
 		flex-direction: column
+
+	&__home-link
+		width: 100%
+		height: 108px
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 2
+
+	&__main-title
+		z-index: 1
+		margin: 0
+		position: absolute
+		bottom: 3px
+		right: 3px
+		font-size: 34px
+		font-style: italic
+		text-shadow: -0 -1px 0 #FFFFFF, 0 -1px 0 #FFFFFF, -0  1px 0 #FFFFFF, 0  1px 0 #FFFFFF, -1px -0 0 #FFFFFF, 1px -0 0 #FFFFFF, -1px  0 0 #FFFFFF, 1px  0 0 #FFFFFF, -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px  1px 0 #FFFFFF, 1px  1px 0 #FFFFFF, -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px  1px 0 #FFFFFF, 1px  1px 0 #FFFFFF
+		
+		&--first-part
+			margin-right: 4px
+			color: #afd228
+
+.main-logo
+	width: 171px
+	height: 108px
+	margin-top: 9px
+	position: relative
+	display: inline-block
+	background-image: url(../img/header/main-logo.png)
+	background-repeat: no-repeat
+		
 
 @import "_shop-main-links.sass"
 @import "_global-nav.sass"

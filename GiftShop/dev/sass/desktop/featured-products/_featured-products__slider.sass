@@ -1,0 +1,90 @@
+.featured-products__slider
+	margin-top: 27px
+	&-arrows
+		display: inline-flex
+	&-arrow
+		display: flex !important
+		align-items: center
+		justify-content: center
+		width: 70px
+		height: 79px
+		cursor: pointer
+		z-index: 3
+		&--left
+			background-color: $main-red
+		&--right
+			margin-left: 1px
+			background-color: #3c3c3c
+		& > svg
+			fill: #fff
+
+.featured-products__slide
+	display: flex
+	position: relative
+	flex-direction: column
+	border: 1px solid #ddd
+	&-image
+		position: relative
+		width: 100%
+		height: 290px
+		overflow: hidden
+		& > img
+			position: absolute
+
+	&-text
+		padding: 13px 15px
+		border-bottom: 1px solid #ddd
+	&-title
+		font-size: 18px
+		letter-spacing: 1.3px
+		& a
+			color: #000
+			&:hover
+				text-decoration: underline
+	&-descr
+		margin-top: 4px
+		font-size: 13px
+		letter-spacing: 1.3px
+		color: $main-red
+	&-new-descr
+		color: $main-blue
+
+
+.slide-checkout
+	display: flex
+	&__customize, &__to-wishlist, &__to-cart
+		width: 52px
+		height: 50px
+		background-repeat: no-repeat
+		background-position: center center
+		vertical-align: middle
+		border-right: 1px solid #ddd
+	&__customize
+		background-image: url(../img/featured-products/checkout-icons/customize.png)
+	&__to-wishlist
+		background-image: url(../img/featured-products/checkout-icons/gift.png)
+	&__to-cart
+		background-image: url(../img/featured-products/checkout-icons/cart.png)
+	&__price
+		display: flex
+		flex-grow: 1
+		align-items: center
+		justify-content: center
+		color: #fff
+		font-size: 24px
+		background-color: $main-red
+		vertical-align: middle
+	&__new-price
+		background-color: $main-blue
+	&__dollar
+		margin: 3px 2px 0 0
+		font-size: 15px
+	&__sup-price
+		margin-left: 2px
+		font-size: 15px
+
+
+
+.featured-products__slider .slick-slide
+	margin: 0 15px
+	outline: none

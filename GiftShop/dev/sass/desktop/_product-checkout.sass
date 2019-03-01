@@ -1,0 +1,63 @@
+.product-checkout
+	display: flex
+	&__to-wishlist, &__to-cart
+		width: 52px
+		height: 55px
+		position: relative
+		background-repeat: no-repeat
+		background-position: center center
+		vertical-align: middle
+		&:hover .product-checkout__hint
+			visibility: visible
+			opacity: 1
+	&__to-wishlist
+		background-image: url(../img/common/gift-icon.png)
+		background-color: #00a1be
+	&__to-cart
+		background-image: url(../img/common/cart-icon.png)
+		background-color: $main-red
+	&__price
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 90px
+		height: 55px
+		color: #fff
+		font-size: 24px
+		background-color: #434343
+		vertical-align: middle
+	&__dollar
+		margin: 3px 2px 0 0
+		font-size: 15px
+	&__sup-price
+		top: -0.3em
+		font-size: 15px
+	&__hint
+		visibility: hidden // hidden by default
+		opacity: 0 // ^
+		width: max-content
+		position: absolute
+		top: -55%
+		left: -51%
+		padding: 5px 20px
+		text-align: center
+		font-size: 14px
+		color: #000
+		border-radius: 6px
+		background: #fff
+		border: 1px solid $main-red
+		transition: linear 0.2s
+		&:before, &:after
+			content: ''
+			display: block
+			position: absolute
+			bottom: -22px
+			left: 42px
+			border-style: solid
+		&:before
+			border-color: $main-red transparent transparent transparent
+			border-width: 11px
+		&:after
+			bottom: -20px
+			border-color: #fff transparent transparent transparent
+			border-width: 11px

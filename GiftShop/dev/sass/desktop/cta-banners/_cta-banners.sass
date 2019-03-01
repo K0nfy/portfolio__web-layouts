@@ -1,0 +1,54 @@
+.cta-banners
+	&__container
+		display: flex
+		justify-content: space-between
+		box-sizing: border-box
+	&__banner
+		width: 370px
+		height: 233px
+		position: relative
+		box-sizing: border-box
+		display: flex
+		&:hover .cta-banners__banner-text
+				text-decoration: underline
+		&-link
+			width: 100%
+			height: 233px
+			position: absolute
+		&-image
+			margin-left: 40px
+			flex-basis: 50%
+			display: flex
+			align-items: center
+			justify-content: center
+			background-repeat: no-repeat
+			background-position: center center
+			&-products
+				background-image: url(../img/who-we-are/banner-image__products.png)
+			&-signin
+				background-image: url(../img/who-we-are/banner-image__login.png)
+			&-checkout
+				background-image: url(../img/who-we-are/banner-image__checkout.png)
+		&-text
+			margin-right: 20px
+			flex-basis: 50%
+			display: flex
+			align-items: center
+			justify-content: center
+			padding-left: 20px
+			font-size: 30px
+			color: #fff
+		&-products
+			background-color: #000
+		&-sign-in
+			background-color: $main-blue
+		&-checkout
+			background-color: $main-red
+
+.cta-banners__register-button
+	display: block
+	margin: 30px auto 0 auto
+	padding: 14px 240px
+	font-size: 27px
+	color: #fff
+	background-color: $main-blue
