@@ -5,7 +5,15 @@ $(document).ready(function(){
     nextArrow: $('.new-products__slider-arrow--right'),
   	slidesToShow: 3,
   	slidesToScroll: 1,
-    autoplay: true
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 1169, // "all container" width -1
+        settings: {
+          slidesToShow: 2
+        }
+      }
+    ]
   });
 
 
@@ -15,6 +23,14 @@ $(document).ready(function(){
   	slidesToShow: 4,
   	slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000
+    autoplaySpeed: 4000,
+    responsive: [
+      {
+        breakpoint: 1169, // "all container" width -1
+        settings: {
+          slidesToShow: 3
+        }
+      }
+    ]
   });
 });

@@ -1,0 +1,15 @@
+.new-products__slider
+
+.new-products__slide
+	&-caption
+		position: absolute
+		left: 0
+		bottom: 0
+
+.new-products__slide // triggers
+	&:hover .new-products__slide-container-link
+		background-color: unset
+	&:hover .new-products__slide-caption
+		margin-top: 100%
+	&:hover .new-products__product-name
+		bottom: 0

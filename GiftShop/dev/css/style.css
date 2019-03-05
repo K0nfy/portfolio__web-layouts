@@ -7,7 +7,6 @@ body {
   margin: auto;
   padding: 10px 0;
   font-family: 'Lato', sans-serif;
-  overflow-x: hidden;
 }
 
 main {
@@ -661,7 +660,7 @@ input {
 }
 
 .main-offers__jewelry {
-  height: 510px;
+  height: 511px;
   position: relative;
   background-image: url(../img/main-offers/jewelry.jpg);
   background-position: -252px -17px;
@@ -670,7 +669,7 @@ input {
 .main-offers__jewelry-container-link {
   display: inline-block;
   width: 100%;
-  height: 510px;
+  height: 511px;
   transition: linear 0.18s;
 }
 
@@ -678,7 +677,7 @@ input {
   content: '';
   display: inline-block;
   width: 100%;
-  height: 510px;
+  height: 511px;
   background-color: rgba(255, 167, 0, 0.1);
 }
 
@@ -762,7 +761,7 @@ input {
 }
 
 .new-products {
-  margin-top: 28px;
+  margin-top: 23px;
 }
 
 .new-products__header {
@@ -1405,4 +1404,115 @@ input {
 
 .footer-copyrights a:hover {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1169px) {
+  body {
+    width: 768px;
+    padding-top: 9px;
+  }
+  .product-checkout__to-wishlist, .product-checkout__to-cart {
+    width: 47px;
+    height: 46px;
+  }
+  .product-checkout__price {
+    width: 80px;
+    height: 46px;
+    font-size: 23px;
+  }
+  .header {
+    padding: 0 7px;
+  }
+  .shop-nav {
+    padding: 0;
+  }
+  .shop-nav__item {
+    border: solid rgba(240, 98, 110, 0.2);
+    border-width: 0 1px;
+  }
+  .shop-nav__category-name {
+    padding: 0 14px;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .shop-nav__dropdown {
+    display: none;
+  }
+  .main-offers {
+    grid-template-columns: 768px;
+    grid-template-rows: auto;
+  }
+  .main-offers__offer {
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .main-offers__crafts {
+    background-size: cover;
+    background-position: center -241px;
+  }
+  .main-offers__crafts-link {
+    line-height: 46px;
+  }
+  .main-offers__womens-wear {
+    background-size: cover;
+    background-position: top center;
+  }
+  .main-offers__womens-wear-caption {
+    right: 0;
+  }
+  .main-offers__baby-set-caption-title > a {
+    line-height: 44px;
+  }
+  .new-products__caption-product-name {
+    display: none;
+  }
+  .new-products__slide-caption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .new-products__slide:hover .new-products__slide-container-link {
+    background-color: unset;
+  }
+  .new-products__slide:hover .new-products__slide-caption {
+    margin-top: 100%;
+  }
+  .new-products__slide:hover .new-products__product-name {
+    bottom: 0;
+  }
+  .featured-products__slide-image > img {
+    margin-left: -53px;
+  }
+  .slide-checkout__price {
+    font-size: 21px;
+  }
+  .slide-checkout__dollar {
+    font-size: 12px;
+  }
+  .slide-checkout__sup-price {
+    font-size: 12px;
+  }
+  .cta-banners__banner-image {
+    margin-left: 25px;
+    background-size: contain;
+  }
+  .cta-banners__banner-text {
+    font-size: 26px;
+  }
+  .footer-links__container {
+    flex-wrap: wrap;
+    justify-content: end;
+    padding-left: 55px;
+    padding-bottom: 10px;
+  }
+  .footer-links__column {
+    flex-basis: 40%;
+    margin-bottom: 35px;
+  }
+  .footer-links__column-header {
+    margin-bottom: 10px;
+  }
+  .footer-copyrights {
+    padding-right: 24px;
+  }
 }

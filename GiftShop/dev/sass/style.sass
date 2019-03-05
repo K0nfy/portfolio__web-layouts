@@ -9,7 +9,7 @@ body
 	padding: 10px 0
 	font-family: 'Lato', sans-serif
 
-	overflow-x: hidden // pixel perfect dev
+	// overflow-x: hidden // pixel perfect dev
 
 main
 	margin: 15px 0 28px 0
@@ -45,10 +45,21 @@ input
 @import "desktop/footer/_footer.sass"
 
 // tablets widths
-// @media screen and (min-width: 768px) and (max-width: $ac-w - 1px)
-	// body
-	// 	width: 768px
-	// @import ...
+@media screen and (min-width: 768px) and (max-width: $ac-w - 1px)
+	body
+		width: 768px
+		padding-top: 9px
+
+	// common
+	@import "tablet/_product-checkout.sass"
+	// sections
+	@import "tablet/header/_header.sass"
+	@import "tablet/shop-nav/_shop-nav.sass"
+	@import "tablet/main-offers/_main-offers.sass"
+	@import "tablet/new-products/_new-products.sass"
+	@import "tablet/featured-products/_featured-products.sass"
+	@import "tablet/cta-banners/_cta-banners.sass"
+	@import "tablet/footer/_footer.sass"
 
 // mobiles widths
 // @media screen and (max-width: 767px)
