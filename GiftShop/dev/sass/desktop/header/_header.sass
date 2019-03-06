@@ -2,7 +2,16 @@
 	display: flex
 	justify-content: space-between
 
-	& .dockToRight-container
+	&__main-logo
+		width: 171px
+		height: 108px
+		margin-top: 9px
+		position: relative
+		display: inline-block
+		background-image: url(../img/header/main-logo.png)
+		background-repeat: no-repeat
+
+	&__navigation
 		width: 530px
 		display: flex
 		flex-direction: column
@@ -28,15 +37,6 @@
 		&--first-part
 			margin-right: 4px
 			color: #afd228
-
-.main-logo
-	width: 171px
-	height: 108px
-	margin-top: 9px
-	position: relative
-	display: inline-block
-	background-image: url(../img/header/main-logo.png)
-	background-repeat: no-repeat
 		
 
 @import "_shop-main-links.sass"
