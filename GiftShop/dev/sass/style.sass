@@ -9,8 +9,6 @@ body
 	padding: 10px 0
 	font-family: 'Lato', sans-serif
 
-	// overflow-x: hidden // pixel perfect dev
-
 main
 	margin: 15px 0 28px 0
 
@@ -59,13 +57,25 @@ input
 	@import "tablet/new-products/_new-products.sass"
 	@import "tablet/featured-products/_featured-products.sass"
 	@import "tablet/cta-banners/_cta-banners.sass"
-	@import "tablet/footer/_footer.sass"
 
 // mobiles widths
-// @media screen and (max-width: 767px)
-	// body
-	// 	width: 320px
-	// @import ...
+@media screen and (max-width: 767px)
+	main
+		margin-top: 0
+
+	body
+		width: 320px
+		padding-top: 45px
+		position: relative
+
+	// sections
+	@import "mobile/header/_header.sass"
+	@import "mobile/shop-nav/_shop-nav.sass"
+	@import "mobile/main-offers/_main-offers.sass"
+	@import "mobile/new-products/_new-products.sass"
+	@import "mobile/featured-products/_featured-products.sass"	
+	@import "mobile/cta-banners/_cta-banners.sass"
+	@import "mobile/footer/_footer.sass"
 
 
 // font-family: 'Lato', sans-serif;
