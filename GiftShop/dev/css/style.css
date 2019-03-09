@@ -1498,6 +1498,22 @@ input {
   .cta-banners__banner-text {
     font-size: 26px;
   }
+  .footer-links__container {
+    flex-wrap: wrap;
+    justify-content: end;
+    padding-left: 55px;
+    padding-bottom: 10px;
+  }
+  .footer-links__column {
+    flex-basis: 40%;
+    margin-bottom: 35px;
+  }
+  .footer-links__column-header {
+    margin-bottom: 10px;
+  }
+  .footer-copyrights {
+    padding-right: 24px;
+  }
 }
 
 @media screen and (max-width: 767px) {
