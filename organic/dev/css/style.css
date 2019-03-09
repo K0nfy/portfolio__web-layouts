@@ -70,12 +70,6 @@ body {
   text-decoration: underline;
 }
 
-.main-nav__nav-link:hover .main-nav__dropdown-content {
-  top: 20px;
-  visibility: visible;
-  opacity: 1;
-}
-
 .main-nav__dropdown {
   position: relative;
   display: inline-block;
@@ -116,6 +110,12 @@ body {
   position: absolute;
   right: -9px;
   top: -3px;
+}
+
+.main-nav__nav-link:hover .main-nav__dropdown-content {
+  top: 20px;
+  visibility: visible;
+  opacity: 1;
 }
 
 .first-section__main-text {
