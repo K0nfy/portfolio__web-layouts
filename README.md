@@ -1,4 +1,5 @@
 # portfolio__web-layouts
+Read this in other languages: [Русский](https://github.com/K0nfy/portfolio__web-layouts/blob/master/README.ru.md "Русский")
 ## About
 Here you'll can see a few web layouts that compiled (not designed) by me for my portfolio as the beginning web-developer. 
 
@@ -16,8 +17,8 @@ Direct links: [dev](https://k0nfy.github.io/portfolio__web-layouts/organic/dev/ 
 :heavy_check_mark: Adaptive (3 points: 320-767 | 768-1220 | 1221+)<br>
 :heavy_check_mark: Observance of html5 semantics<br>
 :heavy_check_mark: Minified css, js and image files<br>
-&nbsp;:grey_question:&nbsp; Pixel perfect: Almost (not strictly)<br>
-:x: Responsive<br>
+&nbsp;:grey_question:&nbsp; Pixel perfect: almost (not strictly)<br>
+:x: Not responsive<br>
 
 Simple and pretty. For this template I had only desktop design layout, so for the tablets and the mobiles widths I changed the details in my own way. 
 
@@ -29,8 +30,8 @@ Direct links: [dev](https://k0nfy.github.io/portfolio__web-layouts/WebDesign-Bla
 :heavy_check_mark: Adaptive (3 points: 320-767 | 768-1059 | 1060+)<br>
 :heavy_check_mark: Observance of html5 semantics<br>
 :heavy_check_mark: Minified css, js and image files<br>
-&nbsp;:grey_question:&nbsp; Pixel perfect: Almost (not strictly)<br>
-:x: Responsive<br>
+&nbsp;:grey_question:&nbsp; Pixel perfect: almost (not strictly)<br>
+:x: Not responsive<br>
 
 Stylish and pretentious. Template has a lot of intersecting background gradients. For this template I had only desktop design layout, so for the tablets and the mobiles widths I changed the details in my own way. 
 
@@ -42,8 +43,8 @@ Direct links: [dev](https://k0nfy.github.io/portfolio__web-layouts/GiftShop/dev/
 :heavy_check_mark: Adaptive (3 points: 320-767 | 768-1169 | 1170+)<br>
 :heavy_check_mark: Observance of html5 semantics<br>
 :heavy_check_mark: Minified css, js and image files<br>
-&nbsp;:grey_question:&nbsp; Pixel perfect: Almost (not strictly)<br>
-:x: Responsive<br>
+&nbsp;:grey_question:&nbsp; Pixel perfect: almost (not strictly)<br>
+:x: Not responsive<br>
 
 Complex layout, which is quite a prototype of a real online store. For this template I had only desktop design layout, so for the tablets and the mobiles widths I changed the details in my own way. 
 
